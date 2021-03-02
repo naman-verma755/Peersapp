@@ -1,0 +1,54 @@
+.JoinCreate {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-family: sans-serif;     
+    background-image: url("../../icons/code-image.jpg");
+    
+   height: 100vh;
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+
+}
+
+.form {
+    
+    width: 272px;
+    height: 391px;
+    display: inline-block;
+    text-align: center;
+    color:black;
+    padding-top: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31,38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+
+.joincreate-input h3 {
+    margin-top:20px;
+    margin-bottom: 8px;
+}
+
+.joincreate-tag h1 {
+    text-decoration: underline;
+}
+.join-input {
+    border-radius: 26px;
+    width: 195px;
+    padding: 5px 5px;
+    background-color: transparent;
+    font-size: 15px;
+    letter-spacing: 1px;
+   
+   
+}
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color:black;
+}
+
