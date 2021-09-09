@@ -2,7 +2,7 @@
 
 ### [Live App](https://peersapp.netlify.com)
 
-![Peersapp](https://user-images.githubusercontent.com/61876890/109605221-cd793080-7b4a-11eb-831f-73b32582f590.png)
+![githubimage](https://user-images.githubusercontent.com/61876890/132719684-21263922-d3b0-4113-83c0-97138044a249.png)
 
 
 
