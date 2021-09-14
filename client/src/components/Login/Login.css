@@ -1,0 +1,24 @@
+
+.login-form-details{
+    background:none;
+    outline: none;
+    
+
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.googl {
+    background-color: blue;
+}
+
+
+.login {
+    height: 8%;
+}

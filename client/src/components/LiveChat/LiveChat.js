@@ -1,15 +1,31 @@
 import React from 'react';
 
-import ScrollToBottom from 'react-scroll-to-bottom';
-
 import Message from './Message/Message';
 
 
-const LiveChat = ({messages, name}) => (
 
-    <ScrollToBottom className="chat-container">
-        {messages.map((message, i) => <div key = {i}><Message message={message} name={name}/></div>)}
-    </ScrollToBottom>
-);
+
+const LiveChat = ({messages, name}) => { 
+  
+    if(messages !== undefined)
+    return  (
+             
+            <div>
+            {messages.map((message, i) => <div key = {i}><Message message={message} name={name}/></div>)}
+           </div>
+    )
+    else
+    {
+        return (<div></div>);
+    }
+    
+    
+    
+   
+
+
+}
+
+
 
 export default LiveChat;

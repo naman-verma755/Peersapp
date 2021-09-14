@@ -1,0 +1,44 @@
+.CreateJoin-main {
+    background-color: blueviolet;
+    width: 100%;
+    height: 100vh;
+}
+
+.join-class {
+    width: 50%;
+    height: 5vh;
+    background-color: chartreuse;
+    text-align: center;
+}
+
+
+.join-create {
+    width: 40%;
+    height: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5%;
+   
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.15);
+      box-shadow: 0 8px 32px 0 rgb(40 40 135 / 37%);
+      backdrop-filter: blur(4px);
+      padding:20px 20px;
+}
+
+
+
+.joincreate {
+    width: 30%;
+    height: 10%;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+    background-color: #2A3166;
+    color: white;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    margin:15px 15px;
+}

@@ -1,38 +1,12 @@
 
 
-
 const users = []
 const roomPassword = {};
 const roomUsers = {};
 
 const roomMessage = {};
 
-const addUser = ({ id, name, room, passcode }) => { 
-    
-    name = name.trim().toLowerCase();
-    room = room.trim().toLowerCase();
-    if (!(room in roomPassword)) {
-        roomPassword[room] = passcode;
-        roomUsers[room] = 0;
-        roomMessage[room] = "";
-    }
 
-
-    roomUsers[room] += 1;
- 
-
-    const user = { id, name, room };
-
-    users.push(user);
-
-    
-    return { user };
-}
-
-const sendMessage = (room) => {
-
-    return roomMessage[room];
-}
 const addMessage = (room, value) => {
     roomMessage[room] = value;
 }
@@ -53,9 +27,17 @@ const removeUser = (id) => {
     else if (roomUsers[room] === 1) {
         //DELETE ROOM AFTER NO USER LEFT IN THE ROOM 
         roomUsers[room] -= 1;
+
+        Messages.deleteMany({}, function(err) {
+            console.log("collection removed");
+        });
+
+        
         delete roomUsers[room];  
         delete roomPassword[room];
         delete roomMessage[room];
+
+
 
     }
 
@@ -67,12 +49,6 @@ const removeUser = (id) => {
 
 }
 
-const getUsersInRoom = (room) => users.filter((user) => user.room === room);
-
-const getUser = (id) => users.find((user) => user.id === id);
-
-const RoomPassword = roomPassword;
-const allUsers = users;
 
 
-module.exports = { addUser, removeUser, getUser, getUsersInRoom, RoomPassword, sendMessage, allUsers, addMessage };
+module.exports = { addMessage};

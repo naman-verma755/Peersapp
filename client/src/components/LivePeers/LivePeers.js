@@ -1,20 +1,30 @@
 import { React } from "react";
-import ScrollToBottom from 'react-scroll-to-bottom';
+import {scroll} from 'react-scroll-to-bottom';
 
-
-const LivePeers = ({users}) => (
+const LivePeers = ({users}) => {
+  
+    var arr=[];
+      for(let i=0;i<users.length; i++)
+      {
+          arr.push(  <div className="peers" key = {`${i} users`}><div  className="activeItem">{users[i]}</div><div className="online">&#8857;</div></div>);
+      }
+    
+    return ( 
    
-    <ScrollToBottom className="chat-container">
-    {users ? <h4> {users.map(({index, name}) => (
-    <div className="peers"><div  className="activeItem">{name}</div><div className="online">&#8857;</div></div>))}</h4> : <div></div>}
-    </ScrollToBottom>
+        <div>
+        <h4>
+        {arr}
+        </h4>
+   </div>
    
 
    
 );
 
+    }
 
 
 
+ 
 
 export default LivePeers;

@@ -1,0 +1,523 @@
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    
+
+
+}
+
+
+.new-design {
+    width: 100vh;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    border-bottom: 100vh solid rgb(21, 14, 51);
+    border-left: 166vh solid rgb(133, 124, 166);
+    left: 0px;
+    z-index: -1;
+    background-color: rgb(21, 14, 51);;
+    
+    
+}
+
+.new-design2 {
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    top:0px;
+    border-top: 100vh solid rgb(21, 14, 51);;;
+    border-right: 166vh solid rgb(133, 124, 166);
+    right:0px;
+    background-color: rgb(21, 14, 51);;
+    z-index: -2;
+   
+    
+}
+
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(white,#2A3166);
+    
+    
+   
+}
+.nav-bar{
+
+    padding: 4px 20px;
+    border: black solid 5px;
+    box-shadow: inset 0 0 10px white;
+}
+
+.container {
+
+    height: 93vh;
+    display: grid; 
+    
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+   
+    grid-template-areas:"box1 box2";
+
+  
+    
+}
+
+.box1-buttons {
+    margin-top: 0px;
+    width: 100%;
+    height: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 14px;
+}
+
+.live-buttons {
+    width: 32%;
+    height: 80%;
+    
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(40, 40, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius:27px;
+    color:#0e1863;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    text-decoration: none;
+}
+
+.box1-sub1 {
+    width: 87%;
+    height: 89%;
+    padding: 1% 1%;
+    margin: 0% 8%;
+   
+    border-radius: 27px;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(40, 40, 135, 0.37);
+    backdrop-filter: blur(4px);
+   
+    
+}
+
+.box1-sub2 {
+    width:100%;
+    height:100%;
+    background-color:violet;
+}
+
+
+.output {
+    width:100%;
+    height: 48%;
+    font-size: 12px;
+    
+    
+    
+    border-radius: 26px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+        color: #050c3d;
+    
+    
+}
+.output1 {
+    width: 100%;
+    height: 100%;
+    
+    font-size: 15px;
+    padding: 5px 5px;
+    border-radius: 22px;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(40, 40, 135, 0.37);
+    backdrop-filter: blur(4px);
+    overflow: auto;
+    flex:auto;
+  
+    
+}
+
+
+.input1 {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    
+   
+    border-radius: 26px;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(40, 40, 135, 0.37);
+    backdrop-filter: blur(4px);
+    overflow: auto;
+    flex:auto;
+}
+
+.input {
+    width: 100%;
+    height: 50%;
+    margin-top: 2%;
+    padding: 2px 2px;
+    
+    
+    border-radius: 27px;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(40, 40, 135, 0.37);
+    backdrop-filter: blur(4px);
+  
+}
+
+.input-h {
+    width: 100%;
+    height: 50%;
+    margin-top: 2%;
+    padding: 2px 2px;
+    
+    
+    border-radius: 27px;
+}
+.inputContainer {
+    width: 100%;
+    height: 98%;
+    border-radius: 25px;
+    background-color: transparent;
+    padding: 2% 2%;
+
+
+    z-index: 0;
+   
+    border: none;
+
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+        color: #050c3d;
+
+}
+
+
+::placeholder {
+    color: white;
+}
+
+
+
+
+.box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.textContainer {
+    
+    width: 82%;
+    height: 88%;
+    padding: 1% 1%;
+    border-radius: 25px;
+ 
+    color:#0e1863;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 0;
+    margin-top:16px;
+
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(40, 40, 135, 0.37);
+    backdrop-filter: blur(4px);
+  
+}
+
+.textContainer  textarea  ::placeholder {
+    color:white;
+}
+
+.run-code {
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    height: 12%;
+    
+    padding: 7px 0px;
+
+}
+
+.button-run-code, .run {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:16%;
+    height:85%;
+    border-radius: 27px;
+    padding-top: 3px;
+  
+
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(40, 40, 135, 0.37);
+    backdrop-filter: blur(4px);
+    
+}
+ .dummy-run-code, .run1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:16%;
+    height:85%;
+    border-radius: 27px;
+    padding-top: 3px;
+    cursor:not-allowed;
+ }
+.run {
+    width: 100%;
+    height: 100%;
+    color:#080f49;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 27px;
+    
+}
+.run1 {
+    width: 100%;
+    height: 100%;
+    color:white;
+    font-family: cursive;
+    font-size: 14px;
+    
+    border-radius: 27px;
+    
+}
+.lang{
+    position: relative;
+    
+    width:24%;
+    height:85%;
+    margin-right:40px;
+    box-shadow: inset 0 0 10px white;
+    
+    
+}
+.lang-content {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+
+    color:#050c3d;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+.lang-name {
+    display: flex;
+    flex-direction: row;
+    padding: 1px 15px;
+    font-size: 17px;
+
+}
+
+.lang-dropdown {
+    position: absolute;
+    height: 360px;
+    bottom: 65px;
+    
+    min-width: 142px;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 5px ;
+    background-color:lavenderblush;
+    
+}
+.lang-option {
+    height: 45px;
+    font-size: 18px;
+    padding: 5px 3px;
+    cursor: pointer;
+    
+}
+.lang-option:hover {
+    background-color: rgba( 200, 200, 200, 0.9);
+    
+}
+.lang-button {
+
+    border: 1px solid lightgrey;
+    margin-left: 5px;
+    height: 26px;
+}
+.lang-button button {
+    background: none;
+    border: none;
+}
+
+
+textarea {
+    
+    resize: none;
+}
+textarea:focus {
+    outline: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+.LiveChat {
+    
+    width: 100%;
+    height: 61vh;
+    padding: 5% 0;
+    overflow: auto;
+    flex:auto;
+}
+.LivePeers {
+    width: 100%;
+    height: 70vh;
+    padding: 5% 0;
+    overflow: auto;
+    flex:auto;
+}
+.activeItem {
+    display: inline;
+    font-size: 25px;
+    margin-left: 5px;
+   
+}
+
+
+
+
+
+.peers {
+    width: 89%;
+}
+.online {
+    
+    float:right;
+    width: 0px;
+    height: 0px;
+    font-size: 22px;
+    color:green;
+    background-color: green;
+    
+    
+}
+
+.box1-sub1-cont {
+width: 100%;
+height: 100%;
+}
+
+.chat-container {
+
+    width: 100%;
+    height: 70vh;   
+    overflow: auto;
+    flex:auto;
+}
+
+.InputArea {
+    
+    width: 100%;
+    height: 15%;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .main-container {
+        width: 100%;
+        height: 1150px;
+        /* background-color: darkcyan; */
+
+    }
+    .container {
+
+         height: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+.box1{
+    height: 100%;
+    
+}
+
+.box1-sub1 {
+    height: 85%;
+    border-radius: 4px;
+}
+.output {
+    height: 48%;
+    font-family:fantasy;
+    
+}
+
+.box2{
+    height: 100%;
+    
+}
+
+.textContainer {
+    padding: 6px 4px;
+    border-radius: 5px;
+}
+
+
+.button-run-code {
+    width:30%;
+    height: 90%;
+    
+}
+.dummy-run-code
+{
+    width:30%;
+    height: 90%;
+    
+}
+.run {
+    font-family: fantasy;
+}
+.lang-button button {
+    color:white;
+}
+.lang {
+    width: 55%;
+    margin:0px;
+    
+}
+.lang-content {
+    color:white;
+    font-family: fantasy;
+    
+}
+
+.lang-name {
+    font-size:15px;
+}
+
+.output1 {
+    border-radius: 8px;
+    box-shadow: none;
+}
+.input1 {
+    border-radius: 8px;
+    
+}
+}
+
+.Run {
+    width: 10px;
+    height: 10px;
+}
+

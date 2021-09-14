@@ -1,0 +1,71 @@
+.usersguide-main {
+    width: 100%;
+    height: 100vh;
+    padding-left: 2%;
+    background-color: lightcyan;
+}
+.usersguide-main h1 {
+    text-align: center;
+    
+}
+
+.usersguide-main-heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.jk {
+    width: 100%;
+    border-bottom: 7px solid darkslategray;
+    
+}
+
+.points {
+    margin-top: 50px;
+}
+
+.points p {
+    
+    font-size: 14px;
+    font-family: sans-serif;
+    font-stretch: wider;
+}
+
+
+.guide-create {
+
+    margin: 2% 0px;
+}
+.guide-create h2, .guide-create h4 {
+    display: inline-block;
+}
+.guide-create ul {
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+.guide-create li {
+    margin-top: 3px;
+}
+.guide-create h2 {
+    margin-right: 5px;
+}
+
+
+.guide-join {
+
+    margin: 2% 0px;
+}
+.guide-join h2, .guide-join h4 {
+    display: inline-block;
+}
+.guide-join ul {
+    margin-left: 45px;
+    margin-top: 10px;
+}
+.guide-join li {
+    margin-top:3px;
+}
+.guide-join h2 {
+    margin-right: 5px;
+}

@@ -8,7 +8,8 @@ const Input = ({ setMessage, sendMessage, message}) => {
 
 
 
-        <form className="input-form">
+        <div className="input-form">
+           
             <input
                 className="input"
                 type="text"
@@ -19,7 +20,7 @@ const Input = ({ setMessage, sendMessage, message}) => {
             />
             <button className="sendButton" onClick={e => sendMessage(e)}>Send</button>
 
-        </form>
+        </div>
     )
 }
 
