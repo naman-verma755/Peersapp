@@ -45,7 +45,7 @@ try {
             await db2.collection(room+"Messages").drop();
           
  
-        },420000)
+        },28800000)
         
     } 
     

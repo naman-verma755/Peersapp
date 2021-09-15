@@ -62,7 +62,7 @@ const Login = ({usertype}) => {
            
         }
         
-        const response = await fetch(`http://localhost:5000/login`,Options)
+        const response = await fetch(`https://peerswebapplication.herokuapp.com/login`,Options)
         
         const data = await response.json();
 
@@ -117,7 +117,7 @@ const Login = ({usertype}) => {
     
   }
   
-  const response = await fetch(`http://localhost:5000/login`,Options)
+  const response = await fetch(`https://peerswebapplication.herokuapp.com/login`,Options)
   
   const data = await response.json();
   const cookies = new Cookies();

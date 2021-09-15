@@ -33,7 +33,7 @@ const UserVerification = async function ()  {
         
       }
         
-    const response = await fetch(`http://localhost:5000/login/validuser`,Opt)
+    const response = await fetch(`https://peerswebapplication.herokuapp.com/login/validuser`,Opt)
     
     const data = await response.json();
  

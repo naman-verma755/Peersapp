@@ -33,7 +33,7 @@ const RoomVerification = async function (valid, setValid)  {
         
       }
         
-    const response = await fetch(`http://localhost:5000/createrooms/roomexist`,Opt)
+    const response = await fetch(`https://peerswebapplication.herokuapp.com/createrooms/roomexist`,Opt)
     
     const data = await response.json();
 

@@ -39,10 +39,15 @@ app.use('/login',cors(corsOptions), loginRoutes);
 app.use('/messages', cors(corsOptions), messageRoutes); 
 app.use('/createrooms', cors(corsOptions), createdRoomsRoutes)
 app.use('/joinroom', cors(corsOptions), joinRoomRoutes)
-  
+
+
+app.get('*', function(req, res) {
+    res.status(404).send("NOt found");
+})
 
 
 const {  addMessage } = require('./users'); 
+const { NOTFOUND } = require('dns');
 io.on('connect', (socket) => {    
 
     socket.on("textContainerMessage", ({ textmessage, room }) => { 

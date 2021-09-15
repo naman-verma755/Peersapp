@@ -16,8 +16,8 @@ import FetchRoomMessages from '../FetchRoomMessages/FetchRoomMessages';
 import NavBar from '../NavBar/NavBar';
 
 import Compiled from '../Compile/Compiled';
-//  const ENDPOINT = 'https://peerswebapplication.herokuapp.com/';
- const ENDPOINT = 'http://localhost:5000';
+
+ const ENDPOINT = 'https://peerswebapplication.herokuapp.com/';
 
 
 let socket;
@@ -156,7 +156,7 @@ const CodeArea = ({ location }) => {
         
 
         
-         await  fetch('http://localhost:5000/messages', Options)
+         await  fetch('https://peerswebapplication.herokuapp.com/messages', Options)
        
             socket.emit('sendMessage', {message,name,room}, () => setMessage(''));
       

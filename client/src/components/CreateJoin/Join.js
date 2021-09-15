@@ -39,7 +39,7 @@ const Join = () => {
  
 }
 
-const response = await fetch(`http://localhost:5000/joinroom`,Options);
+const response = await fetch(`https://peerswebapplication.herokuapp.com/joinroom`,Options);
 const data = await response.json();
 
 if(data.message === "room joined") {

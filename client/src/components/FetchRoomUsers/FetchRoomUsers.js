@@ -21,7 +21,7 @@ async function FetchRoomUsers(room,setUsers) {
                   })
       
     }
-    const res = await fetch(`http://localhost:5000/createrooms/roomexist`,Options)
+    const res = await fetch(`https://peerswebapplication.herokuapp.com/createrooms/roomexist`,Options)
     
 const datafirst = await res.json();
 
@@ -32,7 +32,7 @@ if(datafirst.message !== "room exist")
 }
 
     
-    fetch('http://localhost:5000/joinroom/users', Options)
+    fetch('https://peerswebapplication.herokuapp.com/joinroom/users', Options)
         .then(response => {
          
            return  response.json()

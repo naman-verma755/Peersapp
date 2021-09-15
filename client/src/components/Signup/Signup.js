@@ -85,7 +85,7 @@ else if( password !== repeatPassword)
 else
 {
 
-const response = await fetch(`http://localhost:5000/signup`,Options)
+const response = await fetch(`https://peerswebapplication.herokuapp.com/signup`,Options)
 
 const data = await response.json();
 
@@ -134,7 +134,7 @@ const data = await response.json();
   
 }
 
-const response = await fetch(`http://localhost:5000/signup`,Options)
+const response = await fetch(`https://peerswebapplication.herokuapp.com/signup`,Options)
 
 const data = await response.json();
 const cookies = new Cookies();

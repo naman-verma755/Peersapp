@@ -25,7 +25,7 @@ async function FetchRoomMessages(name,message,room,setMessages) {
 
     
 
-const res = await fetch(`http://localhost:5000/createrooms/roomexist`,Options)
+const res = await fetch(`https://peerswebapplication.herokuapp.com/createrooms/roomexist`,Options)
     
 const datafirst = await res.json();
 
@@ -36,7 +36,7 @@ if(datafirst.message !== "room exist")
 }
 
  
-        const response = await  fetch('http://localhost:5000/messages/mes',Options)
+        const response = await  fetch('https://peerswebapplication.herokuapp.com/messages/mes',Options)
        const data = await response.json();
        let arr = [];
        data.arr.forEach(element => {
