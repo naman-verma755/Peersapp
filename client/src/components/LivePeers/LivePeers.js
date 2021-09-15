@@ -1,5 +1,5 @@
 import { React } from "react";
-import {scroll} from 'react-scroll-to-bottom';
+
 
 const LivePeers = ({users}) => {
   
@@ -10,7 +10,7 @@ const LivePeers = ({users}) => {
       }
     
     return ( 
-   
+    
         <div>
         <h4>
         {arr}
