@@ -152,7 +152,7 @@ const Login = ({usertype}) => {
   <hr></hr>
   
   <label for="email"><b>Email</b></label>
-  <input className="login-form-details" type="text" placeholder="Enter Email" name="email" required></input>
+  <input className="login-form-details" type="text" placeholder="Enter Email" name="email" autoComplete="off" required></input>
   <br></br>
 
   <label for="password"><b>Password</b></label>

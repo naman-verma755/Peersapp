@@ -143,6 +143,7 @@ window.location.href = "/";
   }
 
   const onFailure = (res) => {
+    console.log("err=",res);
     setError("Something went wrong, try again")
   }
 
@@ -183,18 +184,18 @@ window.location.href = "/";
   <hr></hr>
   
   <label for="firstname"><b>First Name</b></label>
-  <input className="form-details" type="text" placeholder="Enter Email" name="firstname" required></input>
+  <input className="form-details" type="text" placeholder="Enter Email" name="firstname" autoComplete="off" required></input>
   <br></br>
 
   <label for="lastname"><b>Last Name</b></label>
-  <input className="form-details" type="text" placeholder="Enter Email" name="lastname" required></input>
+  <input className="form-details" type="text" placeholder="Enter Email" name="lastname" autoComplete="off" required></input>
   <br></br>
     
   
 
   
   <label for="gmail"><b>Gmail</b></label>
-  <input className="form-details" type="text" placeholder="Enter Email" name="gmail" required></input>
+  <input className="form-details" type="text" placeholder="Enter Email" name="gmail" autoComplete="off" required></input>
   <br></br>
    
   <label for="psw"><b>Password</b></label>
@@ -218,7 +219,7 @@ window.location.href = "/";
         onFailure = {onFailure}
         icon = {false}
         cookiePolicy = {'single_host_origin'}
-        isSignedIn={true}
+        isSignedIn={false}
         />
        
   </div>

@@ -88,10 +88,11 @@ const CodeArea = ({ location }) => {
  
 
 
-
     useEffect(() => {
     
         socket = io(ENDPOINT, connectionOptions);
+        
+
      
     }, [ENDPOINT]);
 
@@ -102,6 +103,12 @@ const CodeArea = ({ location }) => {
 
  
     }, [room]);
+  
+    if(document.getElementById("chat"))
+    {
+        var chatHistory = document.getElementById("chat");
+    chatHistory.scrollTop = chatHistory.scrollHeight;
+    }
    
     useEffect(() => {
 

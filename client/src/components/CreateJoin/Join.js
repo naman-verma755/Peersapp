@@ -39,7 +39,7 @@ const Join = () => {
  
 }
 
-const response = await fetch(`https://peerswebapplication.herokuapp.com/joinroom`,Options);
+const response = await fetch(`http://localhost:5000/joinroom`,Options);
 const data = await response.json();
 
 if(data.message === "room joined") {
@@ -81,11 +81,11 @@ else {
 <hr></hr>
 
 <label for="username"><b>Username</b></label>
-<input className="login-form-details" type="text" placeholder="Enter user name" name="username" required></input>
+<input className="login-form-details" type="text" placeholder="Enter user name" name="username" autoComplete="off" required></input>
 <br></br>
 
 <label for="email"><b>Room Name</b></label>
-<input className="login-form-details" type="text" placeholder="Enter room name" name="email" required></input>
+<input className="login-form-details" type="text" placeholder="Enter room name" name="email" autoComplete="off" required></input>
 <br></br>
 
 <label for="password"><b>Room Key</b></label>

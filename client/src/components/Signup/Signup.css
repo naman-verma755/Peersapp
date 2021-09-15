@@ -169,10 +169,10 @@ label {
    }
  .signup{
      width: 90%;
-     height: 96%;
+     height: 108vh;
  }  
  .signup-form {
-     height: 93%;
+     height: 111vh;
  }
 
  .form-details {
@@ -185,6 +185,9 @@ input {
     border-bottom: 2px solid black;
     width: 100%;
     font-size: 15px;
+}
+.login {
+    height: 60px;
 }
 .error {
     width: 100%;

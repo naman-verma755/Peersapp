@@ -30,7 +30,7 @@ app.use(bodyParser.json());
 
 app.use(cors());  
 var corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://peersapp.netlify.app',
     optionsSuccessStatus: 200
 }
 
@@ -47,7 +47,7 @@ app.get('*', function(req, res) {
 
 
 const {  addMessage } = require('./users'); 
-const { NOTFOUND } = require('dns');
+
 io.on('connect', (socket) => {    
 
     socket.on("textContainerMessage", ({ textmessage, room }) => { 
